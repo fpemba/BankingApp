@@ -7,9 +7,15 @@ public class BankAccount {
     private String customerName;
     private String customerId;
 
-    void deposit(int amount){
-        if(amount != 0){
-            balance+= amount;
+
+    public BankAccount(String customerName, String customerId) {
+        this.customerName = customerName;
+        this.customerId = customerId;
+    }
+
+    void deposit(int amount) {
+        if (amount != 0) {
+            balance += amount;
             previousTransaction = amount;
         }
     }
@@ -32,6 +38,7 @@ public class BankAccount {
     }
 
     void showMenu() {
+
 
     }
 
